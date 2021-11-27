@@ -1,0 +1,41 @@
+{
+  "name": "clic-eat",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "algoliasearch": "^4.8.3",
+    "antd": "^4.8.0",
+    "firebase": "^8.1.2",
+    "moment": "^2.29.1",
+    "next": "10.0.1",
+    "next-seo": "^4.17.0",
+    "next-useragent": "^2.3.1",
+    "nprogress": "^0.2.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-feather": "^2.0.9",
+    "react-flip-toolkit": "^7.0.13",
+    "react-instantsearch-dom": "^6.8.2",
+    "react-slideshow-image": "^3.4.3",
+    "react-spring": "^8.0.27",
+    "sequelize": "^6.3.5",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.7",
+    "@types/react": "^16.9.56",
+    "@types/validator": "^13.1.0",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-less": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "less": "^3.12.2",
+    "next-fonts": "^1.5.1",
+    "typescript": "^4.0.5"
+  }
+}

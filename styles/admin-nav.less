@@ -1,0 +1,34 @@
+@import "responsive";
+
+#components-layout-demo-top-side-2 .logo {
+  height: 31px;
+  margin: 0 24px 0 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ant-row-rtl #components-layout-demo-top-side-2 .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+
+.side-nav-md {
+  background: #fff;
+  display: none;
+  .media-gt-phone({
+    display: block;
+  })
+}
+
+.show-sm {
+  display: block;
+  .media-gt-phone({
+    display: none;
+  })
+}
+
+.show-md {
+  display: none;
+  .media-gt-phone({
+    display: block;
+  })
+}

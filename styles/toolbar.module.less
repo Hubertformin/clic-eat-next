@@ -1,0 +1,233 @@
+@import "responsive";
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  padding: 0.5rem 0.5rem;
+  background-color: #e53e3e;
+  transition: all ease 0.4s;
+  .media-gt-phone({
+    padding: 0.5rem 1.25rem;
+  });
+  ul {
+    li {
+      a {
+        color: white;
+      }
+    }
+  }
+  .detail-meta {
+    font-size: 13px;
+    .contact {
+      display: none;
+      .media-gt-tablet({
+        display: block;
+      })
+    }
+  }
+  &.transparent {
+    background: transparent;
+    box-shadow: unset;
+    .controls {
+      .menu {
+        color: white;
+      }
+    }
+    ul {
+      li {
+        a {
+          color: white !important;
+          &.active {
+            color: white;
+            background: transparent !important;
+          }
+        }
+      }
+    }
+  }
+  .media-gt-phone({
+    padding: 0.5rem 3.25rem;
+  });
+}
+
+nav .logo {
+  padding: 0.75rem 0;
+  height: auto;
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .media-gt-tablet({
+    display: none;
+  })
+}
+nav .links-sm {
+  position: relative;
+  width: 100%;
+  .controls {
+    display: grid;
+    grid-template-columns: 30px auto 60px;
+    grid-template-rows: 50px;
+    .cart {
+      position: relative;
+      height: 50px;
+      width: 50px;
+      .badge {
+        position: absolute;
+        background: #3CAF50;
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        line-height: 25px;
+        right: -10px;
+        top: -10px;
+        color: white;
+        display: block;
+        border-radius: 50%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .menu {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+  }
+  input[type=search] {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 0 0.75rem 0 2.5rem;
+    background-color: #eeee;
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+  }
+  .media-gt-tablet({
+    display: none;
+  });
+}
+
+nav .links-md {
+  display: none;
+  justify-content: space-between;
+  padding: 1.2rem 0 0;
+  align-items: center;
+  .leading {
+    ul.nav-links {
+      display: flex;
+      align-items: center;
+      li {
+        display: inline-block;
+        img {
+          height: 40px;
+          width: 40px;
+          margin: 0 25px 0 0;
+          border-radius: 50%;
+        }
+        a {
+          display: block;
+          padding: 5px 15px;
+          border-radius: 25px;
+          font-size: 15px;
+          color: white;
+          position: relative;
+          &.active {
+            color: #EF4C00;
+            background: white;
+          }
+        }
+      }
+    }
+  }
+  .trailing {
+    display: flex;
+    align-items: center;
+    input[type=search] {
+      height: 40px;
+      width: 250px;
+      font-size: 15px;
+      border-radius: 50px;
+      border: none;
+      padding: 0 1.25rem 0 45px;
+      background-color: #eeee;
+      display: inline-block;
+      background-position: 10px;
+      background-repeat: no-repeat;
+      background-size: 20px;
+    }
+    .cart {
+      display: inline-block;
+    }
+  }
+  .cart {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    img {
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .badge {
+      position: absolute;
+      background: #3CAF50;
+      height: 25px;
+      width: 25px;
+      z-index: 2;
+      text-align: center;
+      line-height: 25px;
+      right: -10px;
+      top: -10px;
+      color: white;
+      display: block;
+      border-radius: 50%;
+    }
+  }
+  .media-gt-tablet({
+    display: flex;
+  });
+}
+
+nav .dropdown {
+  min-height: 20vh;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  padding: 0.75rem 0;
+  ul.nav-links {
+    li {
+      a {
+        display: block;
+        padding: 15px;
+      }
+    }
+  }
+}
+
+.nav-drawer {
+  ul {
+    li {
+      a {
+        display: block;
+        padding: 15px;
+        color: white !important;
+      }
+    }
+  }
+}

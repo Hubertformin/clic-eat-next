@@ -1,0 +1,158 @@
+@import "responsive";
+
+.slide-show {
+  height: 71vh;
+  position: relative;
+}
+
+.banner {
+  background-image: url("https://ik.imagekit.io/srmdhcrwxnb/v0/b/clic-eat-app.appspot.com/o/banner-01.png?alt=media&token=f5612320-b7c4-4935-9613-9b684e2cbbe1");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 71vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  padding: 7.5rem 1.8rem 0;
+  position: relative;
+  .title {
+    font-size: 25px;
+    color: white;
+    .media-gt-phone({
+      font-size: 35px;
+    });
+  }
+  .desc {
+    font-size: 20px;
+  }
+  .media-gt-phone({
+    height: 70vh;
+    align-items: center;
+    padding: 0;
+  });
+}
+
+#home-banner {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.slide-container, .react-slideshow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .nav.default-nav {
+    display: none;
+  }
+}
+
+.each-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .img-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.menu-item-section {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 0 15px;
+  .media-gt-phone({
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px 15px;
+  });
+}
+.food-card {
+  position: relative;
+  div.icon {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    .media-gt-phone({
+      height: 200px;
+    });
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: 0.4s linear;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .details {
+    .name {
+      font-size: 17px;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.category-section {
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  text-align: center;
+
+}
+.category-chip {
+  padding: 5px 24px;
+  border-radius: 50px;
+  display:inline-block;
+  margin-right: 15px;
+  background-color: var(--primary-color);
+  color: white;
+
+}
+
+.modal {
+  img {
+    max-height: 250px;
+    object-fit: cover;
+    border-right: 7px;
+  }
+  .title {
+    font-size: 17px;
+  }
+  .price {
+    font-size: 22px;
+  }
+  .quantity-control {
+    height: 40px;
+    border: 1px solid #dddddd;
+    width: 150px;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 35px auto 35px;
+    button {
+      height: 100%;
+      border: none;
+      padding: 0 5px;
+    }
+    input {
+      border: none;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

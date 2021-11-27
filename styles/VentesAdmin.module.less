@@ -1,0 +1,18 @@
+@import "responsive";
+
+.preview-pane {
+  .media-phone({
+    display: none;
+  });
+}
+.sm-preview-pane {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1;
+  .media-gt-phone({
+    display: none;
+  });
+}
